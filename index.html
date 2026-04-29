@@ -6,29 +6,31 @@
 <title>Dev Maryam - Web Developer</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,sans-serif;background:#1a1a1a;color:#fff;padding:12px;font-weight:400;line-height:1.4}
-h1{font-size:1.6rem;margin:10px 0;font-weight:500;text-align:center}
-.darkbtn{background:#ff1493;color:#fff;border:none;padding:8px 20px;border-radius:20px;margin:8px auto;display:block;cursor:pointer;font-size:14px}
+html,body{height:100%}
+body{font-family:Arial,sans-serif;background:#1a1a1a;color:#fff;padding:8px;font-weight:400;line-height:1.3;display:flex;flex-direction:column;justify-content:space-between}
+.wrap{flex:1}
+h1{font-size:1.3rem;margin:6px 0;font-weight:500;text-align:center}
+.darkbtn{background:#ff1493;color:#fff;border:none;padding:6px 16px;border-radius:16px;margin:5px auto;display:block;cursor:pointer;font-size:12px}
 .darkbtn:before{content:"🌙 "}
-.photo{width:130px;height:130px;border-radius:12px;border:2px solid #ff1493;margin:12px auto;display:block;object-fit:cover;object-position:center 20%}
-.tagline{margin:6px 0;font-size:13px;font-weight:400;text-align:center}
-.blue{color:#4da6ff;margin:8px 0;font-weight:500;text-align:center;font-size:13px}
-.card{background:#2d2d2d;border:2px solid #ff1493;border-radius:12px;padding:12px;margin:12px auto;max-width:500px}
-.card h3{margin-bottom:8px;font-weight:600;font-size:16px}
-.card p{margin:5px 0;font-weight:400;font-size:13px}
-.btn{display:inline-block;padding:10px 20px;margin:8px 4px;border-radius:20px;text-decoration:none;font-weight:500;font-size:14px}
+.photo{width:90px;height:90px;border-radius:10px;border:2px solid #ff1493;margin:8px auto;display:block;object-fit:cover;object-position:center 15%}
+.tagline{margin:4px 0;font-size:11px;font-weight:400;text-align:center}
+.blue{color:#4da6ff;margin:4px 0;font-weight:500;text-align:center;font-size:11px}
+.card{background:#2d2d2d;border:1px solid #ff1493;border-radius:10px;padding:8px;margin:8px auto;max-width:100%}
+.card h3{margin-bottom:5px;font-weight:600;font-size:13px}
+.card p{margin:3px 0;font-weight:400;font-size:11px}
+.btn{display:inline-block;padding:8px 16px;margin:6px 3px;border-radius:16px;text-decoration:none;font-weight:500;font-size:12px}
 .whatsapp{background:#25D366;color:#fff}
 .email{background:#ff1493;color:#fff}
-.center{text-align:center;margin-top:10px}
-.project{margin:12px 0;padding-bottom:10px;border-bottom:1px solid #444}
-.project:last-child{border:none;padding-bottom:0}
-.project strong{display:block;margin-bottom:3px;font-weight:600;font-size:14px}
-.project p{font-size:12px;margin:3px 0}
-.project a{color:#ff1493;text-decoration:none;font-weight:500;font-size:13px}
-.footer{text-align:center;margin-top:20px;padding:15px 0;font-size:11px;color:#888;line-height:1.6}
+.center{text-align:center;margin-top:6px}
+.project{margin:6px 0}
+.project strong{display:block;margin-bottom:2px;font-weight:600;font-size:12px}
+.project p{font-size:10px;margin:2px 0}
+.project a{color:#ff1493;text-decoration:none;font-weight:500;font-size:11px}
+.footer{text-align:center;padding:6px 0;font-size:9px;color:#777;line-height:1.4}
 </style>
 </head>
 <body>
+<div class="wrap">
 <h1>Hello, I am Maryam</h1>
 <button class="darkbtn" onclick="document.body.style.background='#ffeef5',document.body.style.color='#333'">Dark Mode</button>
 <img src="maryam (1).jpg" alt="Maryam" class="photo">
@@ -41,26 +43,26 @@ h1{font-size:1.6rem;margin:10px 0;font-weight:500;text-align:center}
 <p>✅ Business Websites — from ₦50,000</p>
 <p>✅ Portfolios — from ₦50,000</p>
 <p>✅ Online Stores — from ₦80,000</p>
-<p style="color:#25D366;margin-top:8px">⚡ 2hr response time guaranteed</p>
+<p style="color:#25D366;margin-top:5px">⚡ 2hr response time guaranteed</p>
 </div>
 
 <div class="card">
 <h3>My Projects</h3>
 <div class="project">
 <strong>Glow Beauty Spa</strong>
-<p>Modern spa website with booking system</p>
+<p>Spa website with booking system</p>
 <a href="#">View Demo →</a>
 </div>
 <div class="project">
 <strong>Kairo Eats Restaurant</strong>
-<p>Online menu + WhatsApp ordering</p>
+<p>Menu + WhatsApp ordering</p>
 <a href="#">View Demo →</a>
-</div>
 </div>
 
 <div class="center">
 <a href="https://wa.me/234YOURNUMBER" class="btn whatsapp">WhatsApp Me</a>
 <a href="mailto:your@email.com" class="btn email">Email Me</a>
+</div>
 </div>
 
 <div class="footer">
