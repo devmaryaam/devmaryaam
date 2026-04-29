@@ -2,73 +2,62 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dev Maryam - Web Developer</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Dev Maryam</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-html,body{height:100%}
-body{font-family:Arial,sans-serif;background:#1a1a1a;color:#fff;padding:8px;font-weight:400;line-height:1.3;display:flex;flex-direction:column;justify-content:space-between}
-.wrap{flex:1}
-h1{font-size:1.3rem;margin:6px 0;font-weight:500;text-align:center}
-.darkbtn{background:#ff1493;color:#fff;border:none;padding:6px 16px;border-radius:16px;margin:5px auto;display:block;cursor:pointer;font-size:12px}
-.darkbtn:before{content:"🌙 "}
-.photo{width:90px;height:90px;border-radius:10px;border:2px solid #ff1493;margin:8px auto;display:block;object-fit:cover;object-position:center 15%}
-.tagline{margin:4px 0;font-size:11px;font-weight:400;text-align:center}
-.blue{color:#4da6ff;margin:4px 0;font-weight:500;text-align:center;font-size:11px}
-.card{background:#2d2d2d;border:1px solid #ff1493;border-radius:10px;padding:8px;margin:8px auto;max-width:100%}
-.card h3{margin-bottom:5px;font-weight:600;font-size:13px}
-.card p{margin:3px 0;font-weight:400;font-size:11px}
-.btn{display:inline-block;padding:8px 16px;margin:6px 3px;border-radius:16px;text-decoration:none;font-weight:500;font-size:12px}
-.whatsapp{background:#25D366;color:#fff}
-.email{background:#ff1493;color:#fff}
-.center{text-align:center;margin-top:6px}
-.project{margin:6px 0}
-.project strong{display:block;margin-bottom:2px;font-weight:600;font-size:12px}
-.project p{font-size:10px;margin:2px 0}
-.project a{color:#ff1493;text-decoration:none;font-weight:500;font-size:11px}
-.footer{text-align:center;padding:6px 0;font-size:9px;color:#777;line-height:1.4}
+html{font-size:2.5vw}
+body{height:100vh;background:#1a1a1a;color:#fff;padding:1vh 2vw;font:400 1rem/1.1 Arial;display:flex;flex-direction:column;overflow:hidden}
+h1{font:500 1.4rem Arial;text-align:center;margin:0.5vh 0}
+.btn{background:#ff1493;color:#fff;border:0;padding:0.6vh 3vw;border-radius:2vh;margin:0.5vh auto;display:block;font-size:0.9rem}
+.btn:before{content:"🌙 "}
+.photo{width:15vw;height:15vw;max-width:65px;max-height:65px;border-radius:1vh;border:1px solid #ff1493;margin:0.8vh auto;display:block;object-fit:cover;object-position:center 15%}
+.txt{margin:0.3vh 0;font-size:0.8rem;text-align:center}
+.blue{color:#4da6ff;margin:0.3vh 0;font-weight:500;text-align:center;font-size:0.8rem}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:1vh;margin:0.8vh 0}
+.card{background:#2d2d2d;border:1px solid #ff1493;border-radius:1vh;padding:0.8vh}
+.card h3{margin-bottom:0.4vh;font-weight:600;font-size:0.9rem}
+.card p{margin:0.2vh 0;font-size:0.75rem}
+.card a{color:#ff1493;text-decoration:none;font-size:0.8rem}
+.cta{text-align:center;margin:0.8vh 0}
+.cta a{display:inline-block;padding:0.8vh 3vw;margin:0 0.5vw;border-radius:2vh;text-decoration:none;font-weight:500;font-size:0.9rem}
+.wa{background:#25D366;color:#fff}
+.em{background:#ff1493;color:#fff}
+.foot{text-align:center;font-size:0.65rem;color:#666;line-height:1.2;margin-top:auto;padding-top:0.5vh}
 </style>
 </head>
 <body>
-<div class="wrap">
 <h1>Hello, I am Maryam</h1>
-<button class="darkbtn" onclick="document.body.style.background='#ffeef5',document.body.style.color='#333'">Dark Mode</button>
-<img src="maryam (1).jpg" alt="Maryam" class="photo">
-<p class="tagline">Day 1 of becoming a developer.</p>
-<p class="tagline">Clickworker lost me. Coding found me.</p>
+<button class="btn" onclick="document.body.style.background='#ffeef5',document.body.style.color='#333'">Dark Mode</button>
+<img src="maryam (1).jpg" class="photo">
+<p class="txt">Day 1 of becoming a developer.</p>
+<p class="txt">Clickworker lost me. Coding found me.</p>
 <p class="blue">Day 2: I make things pretty.</p>
 
+<div class="grid">
 <div class="card">
 <h3>What I Build 💻</h3>
-<p>✅ Business Websites — from ₦50,000</p>
-<p>✅ Portfolios — from ₦50,000</p>
-<p>✅ Online Stores — from ₦80,000</p>
-<p style="color:#25D366;margin-top:5px">⚡ 2hr response time guaranteed</p>
+<p>✅ Websites ₦50,000</p>
+<p>✅ Portfolios ₦50,000</p>
+<p>✅ Stores ₦80,000</p>
+<p style="color:#25D366">⚡ 2hr response</p>
 </div>
 
 <div class="card">
 <h3>My Projects</h3>
-<div class="project">
-<strong>Glow Beauty Spa</strong>
-<p>Spa website with booking system</p>
-<a href="#">View Demo →</a>
-</div>
-<div class="project">
-<strong>Kairo Eats Restaurant</strong>
-<p>Menu + WhatsApp ordering</p>
-<a href="#">View Demo →</a>
-</div>
-
-<div class="center">
-<a href="https://wa.me/234YOURNUMBER" class="btn whatsapp">WhatsApp Me</a>
-<a href="mailto:your@email.com" class="btn email">Email Me</a>
+<p><strong>Glow Beauty Spa</strong><br><a href="#">View Demo →</a></p>
+<p><strong>Kairo Eats</strong><br><a href="#">View Demo →</a></p>
 </div>
 </div>
 
-<div class="footer">
+<div class="cta">
+<a href="https://wa.me/234YOURNUMBER" class="wa">WhatsApp</a>
+<a href="mailto:your@email.com" class="em">Email</a>
+</div>
+
+<div class="foot">
 © 2026 Dev Maryam | Built with love in Cairo 💗<br>
 Chief Dr. Dev Maryam — Your Tech Queen 👑
 </div>
-
 </body>
 </html>
