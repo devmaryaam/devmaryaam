@@ -6,72 +6,98 @@
 <title>Maryam | Portfolio</title>
 <style>
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #0d0d0d;
-  color: #fff;
-  text-align: center;
-  padding: 2vh;
-  transition: 0.3s;
+  margin:0; 
+  font-family:Arial, Helvetica, sans-serif; 
+  background:#0d0d0d; 
+  color:#fff; 
+  text-align:center; 
+  padding:2vh;
+  transition:0.3s;
 }
-h1 {
-  font-size: 3vh;
-  font-weight: 700;
-  margin: 1vh 0;
-}
-p {
-  font-size: 2vh;
-  margin: 1vh 0;
-}
+h1 {font-size:3vh;font-weight:700;margin:1vh 0;}
+p {font-size:2vh;margin:1vh 0;}
 .card {
-  background: #1a1a1a;
-  margin: 2vh auto;
-  width: 90%;
-  max-width: 500px;
-  box-shadow: 0 0 15px #ff4fa3;
-  border-radius: 15px;
-  padding: 2vh;
-  border: 2px solid #ff4fa3;
+  background:#1a1a1a; 
+  margin:2vh auto; 
+  width:90%; 
+  max-width:500px; 
+  box-shadow:0 0 15px #ff4fa3; 
+  border-radius:15px; 
+  padding:2vh; 
+  border:2px solid #ff4fa3;
+  text-align:left;
 }
 img {
-  width: 15vh;
-  height: 15vh;
-  border-radius: 50%;
-  border: 3px solid #ff4fa3;
+  width:15vh; 
+  height:15vh; 
+  border-radius:15px; 
+  border:3px solid #ff4fa3;
+  object-fit:cover;
 }
 .btn {
-  background: #ff4fa3;
-  border: none;
-  color: #fff;
-  padding: 1vh 2vh;
-  border-radius: 1vh;
-  font-size: 2vh;
-  cursor: pointer;
-  margin: 1vh;
+  border:none; 
+  color:#fff; 
+  padding:1vh 2vh; 
+  border-radius:2vh; 
+  font-size:2vh; 
+  cursor:pointer; 
+  margin:1vh;
+  font-weight:bold;
 }
+.dark-btn {background:#ff4fa3;}
+.whatsapp{background:#25d366;}
+.email{background:#ff4fa3;}
+a {color:#ff4fa3;text-decoration:none;}
+
+/* Light mode */
 .body-light {
-  background: #f8f8f8;
-  color: #111;
+  background:#ffe6f0;
+  color:#111;
 }
-.body-light .card {
-  background: #fff;
-  color: #111;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+.body-light .card{
+  background:#fff;
+  color:#111;
+  box-shadow:0 4px 15px rgba(255,79,163,0.3);
 }
+.body-light .dark-btn{background:#333;}
 </style>
 </head>
 <body>
-<div class="card">
-  <img src="https://i.ibb.co/your-image-link.jpg" alt="Maryam">
-  <h1>Hi, I’m Maryam 👑</h1>
-  <p>Frontend developer learning HTML, CSS, JS</p>
-  <button class="btn" onclick="document.body.classList.toggle('body-light')">Toggle Mode</button>
+<div style="text-align:center;">
+  <h1>Hello, I am Maryam</h1>
+  <button class="btn dark-btn" onclick="document.body.classList.toggle('body-light')" id="toggleBtn">
+    🌙 Dark Mode
+  </button>
+  
+  <div style="margin:2vh 0;">
+    <img src="REPLACE_WITH_YOUR_PHOTO_LINK" alt="Maryam">
+  </div>
+  
+  <p><b>Day 1 of becoming a developer.</b></p>
+  <p>Clickworker lost me. Coding found me.</p>
+  <p style="color:#ff4fa3;"><b>Day 2: I make things pretty.</b></p>
 </div>
 
 <div class="card">
-  <h2>Projects</h2>
-  <p>Day 1 - My first page</p>
-  <p>Day 2 - Portfolio with dark mode</p>
+  <h2>What I Build 💻</h2>
+  <p>✅ Business Websites — from ₦50,000</p>
+  <p>✅ Portfolios — from ₦50,000</p>
+  <p>✅ Online Stores — from ₦80,000</p>
+  <p style="color:#25d366;">⚡ 2hr response time guaranteed</p>
 </div>
-</body>
-</html>
+
+<div class="card">
+  <h2>My Projects</h2>
+  <p><b>Glow Beauty Spa</b></p>
+  <p>Modern spa website with booking system</p>
+  <p><a href="#">View Demo →</a></p>
+  
+  <p><b>Kairo Eats Restaurant</b></p>
+  <p>Online menu + WhatsApp ordering</p>
+  <p><a href="#">View Demo →</a></p>
+</div>
+
+<div style="text-align:center;">
+  <button class="btn whatsapp">WhatsApp Me</button>
+  <button class="btn email">Email Me</button>
+  <p style="font-size:1.8
