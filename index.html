@@ -44,33 +44,30 @@ img {
   margin:1vh;
   font-weight:bold;
 }
-.dark-btn {background:#ff4fa3;}
+.toggle-btn {background:#ff4fa3;}
 .whatsapp{background:#25d366;}
 .email{background:#ff4fa3;}
 a {color:#ff4fa3;text-decoration:none;}
 
-/* Light mode */
-.body-light {
+body.light {
   background:#ffe6f0;
   color:#111;
 }
-.body-light .card{
+body.light .card{
   background:#fff;
   color:#111;
   box-shadow:0 4px 15px rgba(255,79,163,0.3);
 }
-.body-light .dark-btn{background:#333;}
+body.light .toggle-btn{background:#333;}
 </style>
 </head>
 <body>
 <div style="text-align:center;">
   <h1>Hello, I am Maryam</h1>
-  <button class="btn dark-btn" onclick="document.body.classList.toggle('body-light')" id="toggleBtn">
-    🌙 Dark Mode
-  </button>
+  <button class="btn toggle-btn" id="toggleBtn">🌙 Dark Mode</button>
   
   <div style="margin:2vh 0;">
-    <img src="REPLACE_WITH_YOUR_PHOTO_LINK" alt="Maryam">
+    <img src="maryam%20(1).jpg" alt="Maryam">
   </div>
   
   <p><b>Day 1 of becoming a developer.</b></p>
@@ -100,4 +97,20 @@ a {color:#ff4fa3;text-decoration:none;}
 <div style="text-align:center;">
   <button class="btn whatsapp">WhatsApp Me</button>
   <button class="btn email">Email Me</button>
-  <p style="font-size:1.8
+  <p style="font-size:1.8vh;margin-top:2vh;color:#888;">
+    © 2026 Dev Maryam | Built with love in Cairo ❤️<br>
+    Chief Dr. Dev Maryam — Your Tech Queen 👑
+  </p>
+</div>
+
+<script>
+const btn = document.getElementById('toggleBtn');
+const body = document.body;
+
+btn.onclick = () => {
+  body.classList.toggle('light');
+  btn.innerHTML = body.classList.contains('light') ? '☀️ Light Mode' : '🌙 Dark Mode';
+}
+</script>
+</body>
+</html>
